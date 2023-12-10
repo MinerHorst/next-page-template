@@ -3,8 +3,6 @@ import { motion as m } from "framer-motion";
 import React from "react";
 
 export default function Home() {
-  const d = new Date();
-
   return (
     <m.div
       animate={{ y: "0%" }}
