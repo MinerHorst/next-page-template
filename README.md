@@ -1,6 +1,6 @@
 # Next.js Template
 
-This is a [Next.js](https://nextjs.org/) template to help you get started with your Next.js projects. It comes pre-configured to jumpstart your development process.
+This is a [Next.js](https://nextjs.org/) template to help you get started with your Next.js projects. It comes pre-configured with [framer.motion](https://www.framer.com/motion/) to jumpstart your development process.
 
 ## Getting Started
 
@@ -11,8 +11,8 @@ Follow these steps to run the development server:
 Clone this repository:
 
 ```bash
-git clone <repository-url>
-cd nextjs-template
+git clone https://github.com/MinerHorst/next-page-template.git
+cd next-page-template
 ```
 
 Install dependencies:
@@ -39,6 +39,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 - Basic Next.js setup
 - Ready-to-use development environment
+- framer.motion page transition pre-configured.
 
 Feel free to customize and build upon this template to suit your project's requirements.
 
@@ -48,11 +49,12 @@ Feel free to customize and build upon this template to suit your project's requi
 nextjs-template/
 │
 ├── components/
-│   ├── Header.js
+│   ├── Navbar.tsx
 │   └── ...
 │
 ├── pages/
-│   ├── index.js
+│   ├── _app.tsx
+│   ├── contact.tsx
 │   └── ...
 │
 ├── styles/
@@ -60,7 +62,6 @@ nextjs-template/
 │   └── ...
 │
 ├── public/
-│   ├── favicon.ico
 │   └── ...
 │
 ├── package.json
