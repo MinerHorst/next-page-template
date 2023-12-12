@@ -1,5 +1,4 @@
 import { motion as m } from "framer-motion";
-import React from "react";
 
 export default function Contact() {
   return (
@@ -11,9 +10,18 @@ export default function Contact() {
         duration: 0.75,
         ease: "easeOut",
       }}
-      className="text-gray-900 absolute top-0 left-0 w-full h-full bg-red-400 lg:px-48 px-16"
+      className="text-white absolute top-0 left-0 w-full h-full bg-black lg:px-48 px-16"
     >
-      <h1 className="text-3xl font-bold">Contact Page</h1>
+      <div className="my-96 p-1 overflow-hidden ">
+        <m.h1
+          animate={{ y: 0 }}
+          initial={{ y: "100%" }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="lg:text-9xl text-6xl lg:text-right text-center"
+        >
+          Contact
+        </m.h1>
+      </div>
     </m.main>
   );
 }

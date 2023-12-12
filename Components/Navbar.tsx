@@ -5,8 +5,8 @@ import React from "react";
 export default function Navbar() {
   const router = useRouter();
   return (
-    <nav className="text-2xl font-medium relative z-20">
-      <ul className="flex gap-12">
+    <nav className="flex gap-2 text-2xl font-medium relative z-20 text-white">
+      <ul className="flex flex-row gap-12">
         <Link href="/">
           <li
             className={`cursor-pointer ${

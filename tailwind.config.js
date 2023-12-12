@@ -1,47 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [],
-  darkMode: false,
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
-      colors: {
-        primary: '#3490dc',
-        secondary: '#ffed4a',
-        accent: {
-          100: '#f7f7f7',
-          200: '#eaeaea',
-          300: '#999999',
-        },
-      },
-      fontSize: {
-        '2xs': '0.625rem',
-        '3xs': '0.5rem',
-      },
-      spacing: {
-        '72': '18rem',
-        '84': '21rem',
-        '96': '24rem',
-      },
-      boxShadow: {
-        'custom': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-      },
-      borderWidth: {
-        '3': '3px',
-        '6': '6px',
-      },
-      borderRadius: {
-        'xl': '1rem',
-        '2xl': '2rem',
-      },
-      zIndex: {
-        '60': 60,
-        '70': 70,
+      height: {
+        "10v": "10vh",
+        "20v": "20vh",
+        "30v": "30vh",
+        "40v": "40vh",
+        "50v": "50vh",
+        "60v": "60vh",
+        "70v": "70vh",
+        "80v": "80vh",
+        "90v": "90vh",
+        "100v": "100vh",
       },
     },
   },
-  variants: {
-    extend: {},
-  },
   plugins: [],
-}
+};
 
