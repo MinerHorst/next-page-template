@@ -6,7 +6,8 @@ import React from "react";
 function MyApp({ Component, pageProps, router }) {
   return (
     <div>
-      <AnimatePresence>
+      <Navbar />
+      <AnimatePresence initial={false}>
         <Component key={router.pathname} {...pageProps} />
       </AnimatePresence>
     </div>
